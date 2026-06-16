@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .boxDiv {
+            width: 300px;
+            height: 200px;
+            background-color: aquamarine;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .BGImage {
+            height: 250px;
+            background-image: url(../assets/black-low-poly-geometric-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding-top: 100px;
+            object-fit: contain;
+        }
+
+        .imgImage {
+            width: 60%;
+            height: 350px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr {
+            background-color: aquamarine;
+        }
+
+        tr:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        th {
+            background-color: aqua;
+            padding: 15px;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        .tableIMG {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .infoSec {
+            width: 300px;
+
+        }
+
+        .tableBox {
+            width: 700px;
+            margin: 10px auto;
+            height: 400px;
+            overflow-y: auto;
+        }
+
+        .largeInfo {
+            width: 200px;
+            height: 400px;
+            overflow-y: auto;
+        }
+
+        h1 {
+            color: rgb(249, 246, 246);
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-shadow: 2px 2px 2px black, 3px 3px 2px orange
+        }
+
+        img.imgImage:hover {
+            box-shadow: 2px 2px 3px 2px gray;
+        }
+
+        img.imgImage {
+            display: block;
+            width: 50%;
+            height: auto;
+            margin: 30px auto;
+            border-radius: 20px;
+        }
+
+        @media screen and (max-width: 300px) {
+            body {
+                background-color: coral;
+            }
+
+            h1 {
+                font-size: 15px;
+                text-shadow: none;
+            }
+
+            div.largeInfo {
+                padding: 0;
+                width: 100%;
+                line-height: 1;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            img.tableIMG {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .imgImage {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        @media screen and ((min-width:301) and (max-width:650px)) {
+            body {
+                background-color: black;
+                color: rgb(7, 144, 144);
+            }
+
+            h1 {
+                color: chocolate;
+                font-size: 30px;
+            }
+
+            div.largeInfo {
+                width: 90%;
+                line-height: 1.1;
+            }
+
+            img.tableIMG {
+                width: 100%;
+                border-radius: 2px;
+                height: 180px;
+            }
+
+            .imgImage {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width:1400px) {}
+
+        ;
+    </style>
+</head>
+
+<body>
+    <header class="BGImage">
+        <h1>Vaazha II: Biopic of a Billion Bros</h1>
+    </header>
+    <img src="../assets/movies2.webp" alt="" class="imgImage">
+
+    <div class="largeInfo">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti explicabo soluta alias nesciunt saepe
+        architecto quis numquam adipisci itaque aut nam est, sed nemo totam, a facere esse, asperiores ex inventore
+        molestiae voluptates? Commodi non rerum architecto ipsa vel, molestiae sint debitis beatae dolor assumenda harum
+        aperiam magni tempora enim eligendi accusamus, blanditiis consectetur dolores culpa eum repudiandae nesciunt id?
+        Ex reprehenderit amet sed rem eaque maiores quam, sint harum pariatur labore exercitationem? Pariatur labore
+        dignissimos, molestias suscipit vitae consectetur corporis repellat laborum sint illo placeat esse unde
+        consequatur beatae, fugit nostrum in dolorum nulla. Dicta dolorem nesciunt laboriosam harum illo natus officiis
+        quaerat obcaecati. Quas delectus voluptates, repellat quasi saepe voluptatum soluta illo aliquid fuga, suscipit,
+        minus similique dolor? Numquam placeat, facilis consequatur enim, exercitationem in soluta dolor dolorem
+        voluptate quos vel aut quaerat eos quasi repudiandae? Harum, veniam. Ducimus velit odio vero in tempore sed quae
+        modi consequatur possimus hic ea accusantium laborum nihil, non doloribus iusto sint laboriosam rem unde
+        delectus voluptatum officiis at. Labore est debitis quae eum atque architecto eligendi magni, ab vitae, in odit
+        rem perferendis odio. Quae sint maxime perferendis, ipsam at autem. Minus obcaecati quibusdam eaque nihil
+        necessitatibus, optio, harum voluptas voluptatem eum architecto aliquam similique accusantium! Tempore, ab quas
+        esse cupiditate ad sapiente delectus repudiandae! Deleniti quia optio id error dolor laboriosam dolorum qui
+        totam, quaerat commodi cupiditate pariatur sunt hic assumenda, maxime dignissimos, enim placeat architecto
+        earum. Fugiat illum eum voluptates corrupti quisquam aspernatur, doloremque non quasi eveniet magnam aut,
+        laboriosam autem doloribus voluptatem. Nam at non quibusdam hic saepe, repudiandae totam aliquam labore eum
+        perferendis quia porro exercitationem temporibus odio et reprehenderit ipsum! Labore eum iste sed rem, illum
+        alias laborum et voluptatem earum esse veritatis quo doloremque odio, quasi enim doloribus nemo animi quod
+        dolorum expedita quaerat quisquam? Labore asperiores tempora cumque voluptate facere ipsam eligendi, unde
+        quidem, eos, provident amet quod ipsa repudiandae temporibus ea praesentium sint molestiae nobis. Rem harum odio
+        neque esse incidunt! Veniam, corrupti pariatur quasi explicabo maiores recusandae quidem modi velit doloribus
+        commodi? Nam ipsa maxime deleniti reprehenderit odio harum laborum quis suscipit veniam. Soluta similique, vitae
+        quaerat commodi quis necessitatibus quod tenetur perferendis inventore vel laboriosam, ad animi omnis tempore
+        doloremque odio nesciunt sunt suscipit? Cupiditate aspernatur deserunt ipsam dolores iusto, placeat doloribus
+        quia, quaerat necessitatibus vel blanditiis inventore. Magnam officiis inventore maiores corrupti ratione
+        temporibus, pariatur voluptatibus est ipsum, fugit accusamus repellat. Nemo incidunt molestiae quibusdam
+        recusandae similique dignissimos blanditiis cupiditate odit consequatur illum iste accusamus eveniet cumque
+        asperiores quis alias aspernatur, provident minus reprehenderit, perspiciatis odio aliquam deleniti minima!
+        Voluptas laborum, placeat eius fugiat, id molestias debitis illo enim, pariatur magni obcaecati sit quo beatae!
+        Porro, voluptatem placeat quasi eligendi consectetur eveniet quidem. Nobis, voluptatum at a temporibus quaerat
+        pariatur saepe magni dicta ex accusantium soluta quae sed distinctio hic debitis nemo eligendi ducimus aliquam
+        ab sequi voluptas fugit ea! Non, iusto ipsam officia fugit dicta aspernatur et eius porro consequatur voluptatum
+        culpa molestias ad possimus in modi deserunt cumque nihil voluptates adipisci labore necessitatibus deleniti!
+        Ratione ad commodi qui quasi necessitatibus repellendus quis soluta tempore consectetur vitae? Voluptate at
+        deserunt eaque ratione tempore obcaecati praesentium expedita quos fuga cupiditate eveniet aperiam natus
+        doloremque numquam voluptatibus ducimus asperiores non officiis provident rerum, excepturi esse neque vero.
+        Consequuntur totam molestiae cum rerum eos neque rem ea, corrupti ipsam molestias. Adipisci, ea. Possimus,
+        facilis. Debitis quibusdam obcaecati beatae molestiae, possimus quod alias explicabo maxime hic aperiam nisi
+        itaque sequi vero, eligendi facere. Vel, quia mollitia non earum libero quod porro deleniti aut esse ullam
+        dignissimos optio consequuntur obcaecati tempora? Inventore repellendus ipsam sint neque expedita harum quos
+        nulla numquam sapiente, dignissimos, laboriosam doloremque iure illum totam eius nemo? Nostrum nihil ipsum
+        inventore deleniti accusantium suscipit, possimus, ipsa iusto beatae a exercitationem iste minus incidunt
+        voluptatum perferendis deserunt expedita excepturi saepe error, unde quis obcaecati doloremque. Impedit corrupti
+        consequatur totam fugit, veniam saepe commodi quam cum est inventore, tempore, eaque vel maiores similique amet.
+        Obcaecati vero sint, eveniet amet quis molestias, sed eum ex neque repudiandae quo porro! Delectus quam dolorem
+        tenetur ullam tempore mollitia illum distinctio aperiam iste aliquid enim, amet quo iure sequi numquam illo
+        voluptatibus asperiores esse modi velit! Corporis maiores aspernatur eum sunt omnis odit autem. Voluptatum
+        possimus repudiandae nostrum sit cumque eaque aut vel quaerat. Quaerat, neque? Pariatur quidem beatae saepe
+        aliquid dicta delectus consectetur. Dolorem odit maiores, quaerat eos ipsum sint dignissimos nemo, nesciunt aut
+        molestiae illum exercitationem error facilis ipsam optio, cum non quae? Reprehenderit hic minus beatae fugiat
+        perferendis pariatur enim saepe porro nisi dolor, sint odio aut! Sint alias ex praesentium. Deserunt neque
+        ratione quas et iure deleniti velit dolore voluptatem ducimus fuga accusantium, minima adipisci minus optio
+        aspernatur commodi nostrum ipsum consequatur doloremque unde odit. Sequi commodi obcaecati animi quaerat et eos
+        tempore inventore deserunt consectetur itaque exercitationem ipsa perferendis placeat adipisci voluptas, impedit
+        recusandae nihil illum incidunt mollitia maiores assumenda totam. Aspernatur, unde eveniet soluta mollitia, quam
+        hic fugit rem a molestiae perferendis odit, velit optio eos? A, soluta ea? Quidem adipisci iure nostrum
+        accusantium magni, mollitia aspernatur vel voluptatem eligendi quas excepturi, iusto assumenda temporibus aut ea
+        unde corporis sed veniam incidunt dolor quibusdam qui tempore eum! Aliquid provident cum neque officia voluptate
+        a nulla quasi sequi minus atque ut quis, recusandae id modi eum rerum amet officiis, perspiciatis quidem alias
+        ducimus facilis quod molestias laudantium! Sint earum ipsa id suscipit eveniet pariatur incidunt, laboriosam
+        aliquam quis ab quasi nulla velit consectetur et tenetur rerum asperiores dolorem. Possimus, iure veritatis ex
+        non molestiae est aspernatur nostrum quaerat, laboriosam vel odio deleniti recusandae natus commodi dignissimos.
+        Nesciunt eveniet quibusdam commodi saepe repellendus quam at ab iste fugit repudiandae aliquid atque illum
+        pariatur quas ex quod non, sint autem? Asperiores placeat reprehenderit, ab pariatur excepturi modi consequuntur
+        necessitatibus quam ducimus vitae. Magnam totam ducimus, eos inventore ea earum ratione sint itaque. Commodi
+        sequi, accusamus eos doloribus vel aut temporibus optio ad totam enim voluptate rem eveniet, molestias
+        doloremque, quae veniam laborum deleniti.
+
+    </div>
+
+    <div class="tableBox">
+        <table>
+            <thead>
+                <tr>
+                    <th>Characters name</th>
+                    <th>Real name</th>
+                    <th>Image</th>
+                    <th class="infoSec">Characters info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hashir</td>
+                    <td>Hashir Mohamed</td>
+                    <td>
+                        <img class="tableIMG" src="../assets/harshil.jpg" alt="">
+                    </td>
+                    <td>is first film as a writer, Aami in Anchu Sundharikal directed by Anwar Rasheed was released in
+                        2013- June, and his second film as writer Neelakasham Pachakadal Chuvanna Bhoomi (NPCB) directed
+                        by Sameer Thahir was released in 2013- August. Many incidents in the film NPCB were reportedly
+                        based on real life incidents.[3][4] Both were commercially successful[citation needed] and
+                        critically acclaimed.</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Alan Bin Siraj</td>
+                    <td>
+                        <img class="tableIMG" src="../assets/alan.webp" alt="">
+                    </td>
+                    <td>is first film as a writer, Aami in Anchu Sundharikal directed by Anwar Rasheed was released in
+                        2013- June, and his second film as writer Neelakasham Pachakadal Chuvanna Bhoomi (NPCB) directed
+                        by Sameer Thahir was released in 2013- August. Many incidents in the film NPCB were reportedly
+                        based on real life incidents.[3][4] Both were commercially successful[citation needed] and
+                        critically acclaimed.</td>
+                </tr>
+                <tr>
+                    <td>Manoj sir</td>
+                    <td>Aju Varghese</td>
+                    <td>
+                        <img class="tableIMG"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Aju_Varghese_inaugural_speech_SARGAM_SJCET.JPG/500px-Aju_Varghese_inaugural_speech_SARGAM_SJCET.JPG"
+                            alt="">
+                    </td>
+                    <td>Aju Kurian Varghese (born 11 January 1985) is an Indian actor, producer and singer who appears
+                        in Malayalam cinema. He made his debut in 2010 in Malarvadi Arts Club,[4] directed by his
+                        collegemate Vineeth Sreenivasan.[5] He has acted in more than 150 Malayalam films in a career
+                        spanning over a decade.[6] He has been critically acclaimed for his comedic role in many films.
+                        He owns a production company named Funtastic Films alon</td>
+                </tr>
+                <tr>
+                    <td>Dy sp xavier</td>
+                    <td>Alphonse Puthren</td>
+                    <td>
+                        <img class="tableIMG"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMfEwmR9j7nYCXnnUBDfU4TTnOuNuhju8nx5zHskUmBTM-2mV4OciN9nqOKvhUse-gGWb8ahT8QA4CugYEczwuraEBdtX3pKdvXPqOZjbp&s=10"
+                            alt="">
+                    </td>
+                    <td>Alphonse Puthren is an Indian film director, film producer, actor, editor, screenwriter and ad
+                        film maker. He works mainly in the Malayalam Cinema. He made his directorial debut with the
+                        critically acclaimed Malayalam - Tamil bilingual suspense-thriller Neram (2013). His second film
+                        was the sensational blockbuster coming-of-age romantic film Premam (2015).[1] After 7 years, he
+                        came back with Gold starring Prithviraj Sukumaran and Nayanthara in the lead roles.[2]</td>
+                </tr>
+                <tr>
+                    <td>Ajo Thomas</td>
+                    <td>Siju Sunny</td>
+                    <td>
+                        <img class="tableIMG"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeMDoh8pr3Y3QfquPbKs99VwW9yzvayLoYN8hhVYEdXKceBwk3eW5cQHW2IwxaLCl68YimQsMpGUTRdw8ll8T6yb1mhSN7axiTGeQgLhix&s=10"
+                            alt="">
+                    </td>
+                    <td>Siju Sunny began his career during the COVID-19 lockdown by creating comedic content on
+                        Instagram Reels, which brought him online recognition.[2] A mechanical engineer by qualification
+                        and a former Gulf expatriate, Siju was actively involved in school and college-level
+                        dramatics.[3]</td>
+                </tr>
+                <tr>
+                    <td>Shiyas</td>
+                    <td>Sudheesh</td>
+                    <td>
+                        <img class="tableIMG"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAP80f3DNZt_z40rK7SJEd7CKGAAiovxuULcA8uzg6NXi3wE6IbNKeOzPsm-VwGRcd59zn60l7W45RrNe3FtUjQOf6lh4_TtS2cPPKWMX&s=10"
+                            alt="">
+                    </td>
+                    <td>udheesh is the only son of T. Sudhakaran Nair and Suryaprabha. Sudhakaran Nair was a retired
+                        deputy collector and an actor who performed notable roles in films such as Bharatham (1991),
+                        Sadayam (1992), Pattabhishekam (1999), Khaki (2007), Gulmohar (2008), Indian Rupee (2011) etc.
+                        The father-son duo has acted together in many films.[1] Similarly, Sudheesh's son Rudraksh has
+                        acted as child hero in the film Kochavva Paulo Ayyappa Coelho (2016).[2] Sudheesh did his
+                        schooling from St.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
