@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      
+      .containergird {
+        display: grid;
+        width: 100%;
+        gap: 10px;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        grid-template-columns: 1fr;
+       
+        grid-template-areas:
+          'nav'
+          'side'
+          'main'
+          'co1'
+          'co2'
+          'co3'
+          'foot';
+      }
+
+      
+      .containergird > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        min-height: 80px;
+      }
+
+     
+      .navbar {
+        grid-area: nav;
+        background-color: #bbfae7;
+      }
+      .sidehedar {
+        grid-area: side;
+        background-color: aqua;
+      }
+      .main {
+        grid-area: main;
+        background-color: #8bf3ff;
+      }
+      .container1 {
+        grid-area: co1;
+        background-color: chocolate;
+      }
+      .container2 {
+        grid-area: co2;
+        background-color: coral;
+      }
+      .container3 {
+        grid-area: co3;
+        background-color: antiquewhite;
+      } 
+      .footer {
+        grid-area: foot;
+        background-color: blue;
+      }
+
+      @media screen and (min-width: 768px) {
+        .containergird {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: auto 300px 200px auto; 
+
+          grid-template-areas: 
+            "side nav  nav  nav"
+            "side main main main"
+            "side co1  co2  co3"
+            "side foot foot foot";
+        }
+        
+        .main {
+          min-height: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+   <div class="containergird">
+       <div class="navbar">navbar</div>
+       <div class="sidehedar">sidehedar</div>
+       <div class="main">main</div>
+       <div class="container1">container1</div>
+       <div class="container2">container2</div>
+       <div class="container3">container3</div>
+       <div class="footer">footer</div>
+   </div> 
+</body>
+</html>
