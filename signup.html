@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - The Boys</title>
+    <link rel="stylesheet" href="sing.css">
+</head>
+<body>
+
+    <div class="singcantainer">
+        <h1>The Boys</h1>
+        <h4>Sign up for our newsletters and get updates from Sony Pictures delivered right to your inbox.</h4>
+         
+        <form action="" method="POST">
+            
+            <div class="form-body">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="First Name" maxlength="40" class="inputbox" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="40" class="inputbox" required>
+                </div>
+            
+                <div class="input-group">
+                    <input type="email" id="useremail" name="email" placeholder="Email Address" maxlength="40" class="inputbox" required>
+                </div>
+                
+                <fieldset class="date-fieldset">
+                    <legend>Date of Birth</legend>
+                    <div class="datecontainer">
+                        <input type="number" id="dob-date" name="day" placeholder="DD" min="1" max="31" class="inputbox">
+                        
+                        <select name="month" id="dob-month" class="inputbox">
+                            <option value="">Select Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+
+                        <input type="number" id="dob-year" name="year" placeholder="YYYY" min="1900" max="2026" class="inputbox">
+                    </div>
+                </fieldset>
+
+                <div class="gender-container">
+                    <span class="gender-label">Select Gender:</span>
+                    <label><input type="radio" value="male" name="gender"> Male</label>
+                    <label><input type="radio" value="female" name="gender"> Female</label>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                    <button type="reset" class="btn reset-btn">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
