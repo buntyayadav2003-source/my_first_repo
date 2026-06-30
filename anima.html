@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+         box-sizing: border-box;
+        }
+        .box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .box:hover{
+            transform:rotate(60deg);
+        }
+        .customBlink{
+            color: red;
+            font-size: 200px;
+            animation: heartblink 2s 3s infinite ;
+        }
+        .Threebox{
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            animation: animation 3s 2s infinite ;
+        }
+        .loader{
+            width: 100px;
+            height: 100px;
+            border: 6px solid #ccc;
+            border-top: 6px solid #1bd954;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin{
+           0%{
+            transform: rotate(0deg);
+           }
+           100%{
+            transform: rotate(360deg);
+           }
+        }
+        @keyframes heartblink{
+           from{
+            font-size: 3px;
+           }
+           to{
+            font-size: 130px;
+           }
+        }
+
+        @keyframes animation{
+           0%{
+            background-color: black;
+           }
+           30%{
+            background-color: brown;
+            border-right: 3px solid red;
+           }
+           65%{
+            background-color: cadetblue;
+           }
+           75%{
+            border-left:3px solid red;
+           }
+           100%{
+            background-color: darkblue;
+            border-top: 3px solid red;
+           }
+        }
+    </style>
+</head>
+<body>
+   <div class="box"></div> 
+   <br>
+    <div class="boxtwo"></div>
+   <i class="fa-solid fa-heart customBlink"></i>
+   <div class="Threebox"></div>
+
+   <div class="loader"></div>
+</body>
+</html>
